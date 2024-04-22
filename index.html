@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+    
+<script src="myjs.js"></script>
+</head>
+<body>
+
+    <div class="phone-status-bar">
+        <h1 class="heading-primary">WhatsApp</h1>
+        <div class="phone-status-bar__right-icon">
+           <i class="fa fa-search" aria-hidden="true"></i> 
+           <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+        </div>
+    </div>
+
+    <div class="menu-bar">
+        <i class="fa fa-camera" aria-hidden="true"></i> 
+        <ul class="menu-bar__list">
+            <li class="menu-bar__list-item" onclick="changeTab(1);">Chat</li>
+            <li class="menu-bar__list-item" onclick="changeTab(2);">Status</li>
+            <li class="menu-bar__list-item" onclick="changeTab(3);">Calls</li>
+        </ul>
+    </div>
+
+   <div class="chat-status-call">
+         <div class="chat-container">
+
+             <div class="contact-list">
+                    <i class="material-icons">
+                            chat
+                            </i>
+             </div>
+
+                <div class="chat-list">
+                    <div class="person-profile">
+                        <img src="https://imgs.search.brave.com/mFloGCAcsDWsLW7EWa86t0gk8BKa5L6zrdoO_JSdA_k/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL00v/TVY1Qk1EWXpZV1E0/WldRdFptSTVNaTAw/WW1JM0xUbGhNell0/T1RBMVpEYzNOamM0/Wm1JeFhrRXlYa0Zx/Y0dkZVFYVnlNVFl5/TmpnMk16VXouX1Yx/X1FMNzVfVVg1MDBf/Q1IwLDI2LDUwMCwy/ODFfLmpwZw" alt="" class="user-img">
+                        <div class="person-name">
+                                <h1 class="persion-name-heading">
+                                       John (classmate)
+                                </h1>
+                                <p class="person-chat">Bro, where are you???</p>
+                        </div>
+                    </div>
+                    <p class="last-chat-time">12:00 pm</p>
+                </div>
+        
+                             
+        
+                        <div class="chat-list">
+                                <div class="person-profile">
+                                    <img src="https://imgs.search.brave.com/Tke118b_cYsZNAd-310hV-e910ClT2f1SlBigIV2P4w/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8w/LzBmL0Frcml0aV9L/YWtrYXJfUmFkaW9f/T25lX0thcmFva2Vf/c2Vzc2lvbnMuanBn" alt="" class="user-img">
+                                    <div class="person-name">
+                                            <h1 class="persion-name-heading">
+                                                   Akriti
+                                            </h1>
+                                            <p class="person-chat">Answer my phone! I need your help... </p>
+                                    </div>
+                                </div>
+                                <p class="last-chat-time">2:30 am</p>
+                            </div>
+        
+                            <div class="chat-list">
+                                    <div class="person-profile">
+                                        <img src="https://imgs.search.brave.com/plzyZN7ommlhipnRcUIcZeh2l7EvfByBo-l2kEBpMCM/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL00v/TVY1Qk56QTNaREEy/Wm1JdE56ZzJPUzAw/TjJVNExUazVaREF0/TnpRM09USXdaR1kz/WlRBMFhrRXlYa0Zx/Y0dkZVFWUm9hWEpr/VUdGeWRIbEpibWRs/YzNScGIyNVhiM0py/Wm14dmR3QEAuX1Yx/X1FMNzVfVVg1MDBf/Q1IwLDAsNTAwLDI4/MV8uanBn" alt="" class="user-img ">
+                                        <div class="person-name">
+                                                <h1 class="persion-name-heading">
+                                                       Ravi (colleague)
+                                                </h1>
+                                                <p class="person-chat">Bhai, thode der m aata hoon...</p>
+                                        </div>
+                                    </div>
+                                    <p class="last-chat-time"> 1:00 am</p>
+                                </div>
+        
+        
+                                <div class="chat-list">
+                                        <div class="person-profile">
+                                            <img src="https://imgs.search.brave.com/IHVmaZIX8X7mAahAkPAbHHYih4zffXIdWSig6KFHgQ0/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL00v/TVY1Qk5qVmpPV1V6/Wm1RdFltRXpNeTAw/TW1JMUxXRmhOamN0/TXpOa1pEUmlOR1Jo/TWpjNFhrRXlYa0Zx/Y0dkZVFYVnlNVEV4/TkRRMk1USUAuanBn" alt="" class="user-img">
+                                            <div class="person-name">
+                                                    <h1 class="persion-name-heading">
+                                                          Rental room 
+                                                    </h1>
+                                                    <p class="person-chat">Is room for rent available??</p>
+                                            </div>
+                                        </div>
+                                        <p class="last-chat-time">2:00 am</p>
+                                    </div>
+                                    
+                                    <div class="chat-list">
+                                            <div class="person-profile">
+                                                <img src="https://imgs.search.brave.com/IhipoKRAlXHDY-Y51fJeCarQ2o0HeKERHb7u47OdeQ0/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9hcGku/dGltZS5jb20vd3At/Y29udGVudC91cGxv/YWRzLzIwMjIvMDMv/YXN0aGEtaGVhZHNo/b3QuanBlZz9xdWFs/aXR5PTg1Jnc9MzAw/Jmg9MzAwJmNyb3A9/MQ" alt="" class="user-img">
+                                                <div class="person-name">
+                                                        <h1 class="persion-name-heading">
+                                                             Aastha
+                                                        </h1>
+                                                        <p class="person-chat">I am coming wait!!!<span class="tick">&#10003;</span><span class="tick2">&#10003;</span></p>
+</p>
+                                                </div>
+                                            </div>
+                                            <p class="last-chat-time">12:00 pm</p>
+                                        </div>
+                                        
+                                        
+                                        <div class="chat-list">
+                                            <div class="person-profile">
+                                                <img src="https://imgs.search.brave.com/0bkiTJ2f3w0t4ZeGAdwmLalHHOMaWaCVLvYr3cEs0Gg/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTI0/NDExOTM5MS9waG90/by9yYWtlc2gtc2hh/cm1hLWNoaWVmLWV4/ZWN1dGl2ZS1vZmZp/Y2VyLW9mLWlkYmkt/YmFuay1sdGQtZHVy/aW5nLWEtbmV3cy1j/b25mZXJlbmNlLWlu/LW11bWJhaS5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9UkhT/NjhRcjlYclV4MnlC/MmNOTkl3WlJZR0hT/a2E4ZXVtY2NmTk8z/SGZQVT0" alt="" class="user-img">
+                                                <div class="person-name">
+                                                        <h1 class="persion-name-heading">
+                                                            Rakesh
+                                                        </h1>
+                                                    <p class="person-chat">How's life bro??<span class="tick">&#10003;</span><span class="tick2">&#10003;</span></p>
+                                                </div>
+                                            </div>
+                                            <p class="last-chat-time">12:00 pm</p>
+                                        </div>
+        
+        
+                                    <div class="chat-list">
+                                            <div class="person-profile">
+                                                <img src="https://imgs.search.brave.com/j6rHhsWxG2nd75ZZg0PE3VFj7BTj9D9Q-TWd7VncND8/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/cHJvLWZvb3RiYWxs/LXJlZmVyZW5jZS5j/b20vcmVxLzIwMjMw/MzA3L2ltYWdlcy9o/ZWFkc2hvdHMvSG9w/a0RlMDBfMjAyMi5q/cGc" alt="" class="user-img">
+                                                <div class="person-name">
+                                                        <h1 class="persion-name-heading">
+                                                                Hoplins
+                                                        </h1>
+                                                        <p class="person-chat">are you free??</p>
+                                                </div>
+                                            </div>
+                                            <p class="last-chat-time">12:00 pm</p>
+                                        </div>
+        
+                                        <div class="chat-list">
+                                                <div class="person-profile">
+                                                    <img src="https://imgs.search.brave.com/vCZk7J4kU7pNyFxw-JjbbwSCGgiDhjqxi1k_CPluEbM/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL00v/TVY1Qll6ZGlaRFl6/TTJVdE5URTFNUzAw/WmprMkxUaGhZV0l0/TWpaallUSXpZVGc0/TVRNd1hrRXlYa0Zx/Y0dkZVFYVnlOREF6/TkRrME1UUUAuanBn" alt="" class="user-img">
+                                                    <div class="person-name">
+                                                            <h1 class="persion-name-heading">
+                                                                    Shweta
+                                                            </h1>
+                                                            <p class="person-chat">Where are you??</p>
+                                                    </div>
+                                                </div>
+                                                <p class="last-chat-time">12:00 pm</p>
+                                            </div>
+        
+                                            <div class="chat-list">
+                                                    <div class="person-profile">
+                                                        <img src="https://imgs.search.brave.com/iotZ29AaXsvvUrIf14iRhmNpYxhQaMDB_b0xNRHbxBQ/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy80/LzRlL0tyaXRpa2Ff/S2FtcmFfc25hcHBl/ZF9kdXJpbmdfdGhl/X3Byb21vdGlvbnNf/b2ZfQmFtYmFpX01l/cmlfSmFhbl9hdF9K/V19NYXJyaW90dCxf/SnVodV8oY3JvcHBl/ZCkuanBn" alt="" class="user-img">
+                                                        <div class="person-name">
+                                                                <h1 class="persion-name-heading">
+                                                                       Sritika
+                                                                </h1>
+                                                                <p class="person-chat">please wait for me!!</p>
+                                                        </div>
+                                                    </div>
+                                                    <p class="last-chat-time">12:00 pm</p>
+                                            </div>
+              </div> 
+            
+         <div class="status-container">
+
+                <div class="status-list-fixed">
+                        <i class="fa fa-pencil fa-2x" aria-hidden="true"></i>
+                        <i class="fa fa-camera-retro fa-2x" aria-hidden="true"></i>
+                 </div>
+    
+             
+                <div class="person-profile person-profile-status">
+                     <i class="fa fa-plus add-icon" aria-hidden="true"></i>   
+                    <img src="https://www.searchpng.com/wp-content/uploads/2019/02/Deafult-Profile-Pitcher.png" alt="" class="user-img">
+                    <div class="person-name">
+                      <h2 class="persion-name-heading">  My status </h2>
+                      <p class="person-chat">Tap to see add status upadte</p>
+                   </div>
+                </div>
+                <h2 class="recent-update">Recent updates
+                </h2>
+
+                <div class="chat-list">
+                                <div class="person-profile">
+                                    <img src="https://imgs.search.brave.com/mFloGCAcsDWsLW7EWa86t0gk8BKa5L6zrdoO_JSdA_k/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL00v/TVY1Qk1EWXpZV1E0/WldRdFptSTVNaTAw/WW1JM0xUbGhNell0/T1RBMVpEYzNOamM0/Wm1JeFhrRXlYa0Zx/Y0dkZVFYVnlNVFl5/TmpnMk16VXouX1Yx/X1FMNzVfVVg1MDBf/Q1IwLDI2LDUwMCwy/ODFfLmpwZw" alt="" class="user-img user-img-status">
+                                    <div class="person-name">
+                                            <h1 class="persion-name-heading">
+                                                John (classmate)
+                                            </h1>
+                                            <p class="person-chat">9 minutes ago</p>
+                                    </div>
+                                </div>
+                 </div>
+                  
+         </div>
+
+         <div class="call-container">
+
+                <div class="call-list">
+                        <i class="fa fa-phone fa-2x" aria-hidden="true"></i>
+                 </div>
+                        <div class="chat-list">
+                               <div class="person-profile">
+                                     <img src="https://imgs.search.brave.com/iotZ29AaXsvvUrIf14iRhmNpYxhQaMDB_b0xNRHbxBQ/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy80/LzRlL0tyaXRpa2Ff/S2FtcmFfc25hcHBl/ZF9kdXJpbmdfdGhl/X3Byb21vdGlvbnNf/b2ZfQmFtYmFpX01l/cmlfSmFhbl9hdF9K/V19NYXJyaW90dCxf/SnVodV8oY3JvcHBl/ZCkuanBn" alt="" class="user-img">
+                                         <div class="person-name">
+                                              <h1 class="persion-name-heading">
+                                                  Sritika
+                                              </h1>
+                                              <p class="person-chat"> Today, 3:40 am</p>
+                                           </div>
+                                </div>
+                            <p class="last-chat-time"><i class="fa fa-phone fx-4x call-icon" aria-hidden="true"></i></p>
+                        </div>
+
+                        <div class="chat-list">
+                            <div class="person-profile">
+                                  <img src="https://imgs.search.brave.com/0bkiTJ2f3w0t4ZeGAdwmLalHHOMaWaCVLvYr3cEs0Gg/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTI0/NDExOTM5MS9waG90/by9yYWtlc2gtc2hh/cm1hLWNoaWVmLWV4/ZWN1dGl2ZS1vZmZp/Y2VyLW9mLWlkYmkt/YmFuay1sdGQtZHVy/aW5nLWEtbmV3cy1j/b25mZXJlbmNlLWlu/LW11bWJhaS5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9UkhT/NjhRcjlYclV4MnlC/MmNOTkl3WlJZR0hT/a2E4ZXVtY2NmTk8z/SGZQVT0" alt="" class="user-img" alt="" class="user-img">
+                                      <div class="person-name">
+                                           <h1 class="persion-name-heading">
+                                              Rakesh
+                                           </h1>
+                                           <p class="person-chat"> Today, 1 :20 am</p>
+                                        </div>
+                             </div>
+                         <p class="last-chat-time"><i class="fa fa-video-camera call-icon" aria-hidden="true"></i></p>
+                     </div>
+         </div>
+
+   
+        </div> 
+   
+
+</body>
+</html>
